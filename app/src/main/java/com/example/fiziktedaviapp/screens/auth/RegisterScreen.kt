@@ -94,7 +94,7 @@ fun RegisterScreen(navController: NavController) {
                     imeAction = ImeAction.Next
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),
@@ -115,7 +115,7 @@ fun RegisterScreen(navController: NavController) {
                     imeAction = ImeAction.Next
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),
@@ -145,7 +145,7 @@ fun RegisterScreen(navController: NavController) {
                     imeAction = ImeAction.Next
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),
@@ -175,7 +175,7 @@ fun RegisterScreen(navController: NavController) {
                     imeAction = ImeAction.Done
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),

@@ -81,7 +81,7 @@ fun ForgotPasswordScreen(navController: NavController) {
                         imeAction = ImeAction.Done
                     ),
                     singleLine = true,
-                    colors = TextFieldDefaults.outlinedTextFieldColors(
+                    colors = OutlinedTextFieldDefaults.colors(
                         focusedBorderColor = DarkBlue,
                         unfocusedBorderColor = LightBlue
                     ),

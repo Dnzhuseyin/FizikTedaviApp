@@ -6,7 +6,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
-import androidx.compose.material.icons.filled.Facebook
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
@@ -78,7 +77,7 @@ fun LoginScreen(navController: NavController) {
                     imeAction = ImeAction.Next
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),
@@ -108,7 +107,7 @@ fun LoginScreen(navController: NavController) {
                     imeAction = ImeAction.Done
                 ),
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue
                 ),

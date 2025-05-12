@@ -3,8 +3,10 @@ package com.example.fiziktedaviapp.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.example.fiziktedaviapp.screens.auth.LoginScreen
 import com.example.fiziktedaviapp.screens.auth.RegisterScreen
 import com.example.fiziktedaviapp.screens.auth.ForgotPasswordScreen
@@ -70,7 +72,10 @@ fun NavGraph(
             ExerciseListScreen(navController)
         }
         
-        composable(Screen.ExerciseDetail.route) { backStackEntry ->
+        composable(
+            route = Screen.ExerciseDetail.route,
+            arguments = listOf(navArgument("exerciseId") { type = NavType.StringType })
+        ) { backStackEntry ->
             val exerciseId = backStackEntry.arguments?.getString("exerciseId") ?: "0"
             ExerciseDetailScreen(navController, exerciseId)
         }
