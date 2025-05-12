@@ -171,7 +171,7 @@ fun ExerciseListScreen(navController: NavController) {
                     }
                 },
                 singleLine = true,
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = TextFieldDefaults.colors(
                     focusedBorderColor = DarkBlue,
                     unfocusedBorderColor = LightBlue,
                     containerColor = SurfaceLight
@@ -183,7 +183,7 @@ fun ExerciseListScreen(navController: NavController) {
             )
             
             // Filtre seçimi
-            LazyRow(
+            androidx.compose.foundation.lazy.LazyRow(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp, vertical = 8.dp),
@@ -220,23 +220,6 @@ fun ExerciseListScreen(navController: NavController) {
                 item { Spacer(modifier = Modifier.height(16.dp)) }
             }
         }
-    }
-}
-
-@OptIn(ExperimentalLayoutApi::class)
-@Composable
-fun LazyRow(
-    modifier: Modifier = Modifier,
-    horizontalArrangement: Arrangement.Horizontal = Arrangement.Start,
-    verticalAlignment: Alignment.Vertical = Alignment.Top,
-    content: @Composable () -> Unit
-) {
-    Row(
-        modifier = modifier.horizontalScroll(rememberScrollState()),
-        horizontalArrangement = horizontalArrangement,
-        verticalAlignment = verticalAlignment
-    ) {
-        content()
     }
 }
 

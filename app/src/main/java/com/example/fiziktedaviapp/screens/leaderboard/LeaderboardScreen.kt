@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -109,7 +110,7 @@ fun LeaderboardScreen(navController: NavController) {
                         modifier = Modifier.weight(1f),
                         containerHeight = 100.dp,
                         avatarSize = 56.dp,
-                        crownIcon = Icons.Filled.Looks2
+                        crownIcon = Icons.Default.Looks2
                     )
                     
                     // 1. Sıra
@@ -119,7 +120,7 @@ fun LeaderboardScreen(navController: NavController) {
                         modifier = Modifier.weight(1f),
                         containerHeight = 130.dp,
                         avatarSize = 72.dp,
-                        crownIcon = Icons.Filled.Looks1
+                        crownIcon = Icons.Default.Looks1
                     )
                     
                     // 3. Sıra
