@@ -172,9 +172,10 @@ fun ExerciseListScreen(navController: NavController) {
                 },
                 singleLine = true,
                 colors = TextFieldDefaults.colors(
-                    focusedBorderColor = DarkBlue,
-                    unfocusedBorderColor = LightBlue,
-                    containerColor = SurfaceLight
+                    focusedContainerColor = SurfaceLight,
+                    unfocusedContainerColor = SurfaceLight,
+                    focusedIndicatorColor = DarkBlue,
+                    unfocusedIndicatorColor = LightBlue
                 ),
                 shape = RoundedCornerShape(8.dp),
                 modifier = Modifier

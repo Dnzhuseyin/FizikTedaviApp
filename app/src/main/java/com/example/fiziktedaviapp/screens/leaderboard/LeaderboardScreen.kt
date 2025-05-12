@@ -21,6 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.Dp
 import androidx.navigation.NavController
 import com.example.fiziktedaviapp.ui.theme.*
 
@@ -110,7 +111,7 @@ fun LeaderboardScreen(navController: NavController) {
                         modifier = Modifier.weight(1f),
                         containerHeight = 100.dp,
                         avatarSize = 56.dp,
-                        crownIcon = Icons.Default.Looks2
+                        crownIcon = Icons.Filled.Filter2
                     )
                     
                     // 1. Sıra
@@ -120,7 +121,7 @@ fun LeaderboardScreen(navController: NavController) {
                         modifier = Modifier.weight(1f),
                         containerHeight = 130.dp,
                         avatarSize = 72.dp,
-                        crownIcon = Icons.Default.Looks1
+                        crownIcon = Icons.Filled.Filter1
                     )
                     
                     // 3. Sıra
@@ -130,7 +131,7 @@ fun LeaderboardScreen(navController: NavController) {
                         modifier = Modifier.weight(1f),
                         containerHeight = 80.dp,
                         avatarSize = 48.dp,
-                        crownIcon = Icons.Filled.Looks3
+                        crownIcon = Icons.Filled.Filter3
                     )
                 }
             }
